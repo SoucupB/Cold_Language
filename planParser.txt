@@ -1,0 +1,142 @@
+Create a problem compiler that can take as input a string that is a program, and it should run it.
+
+What does it means to run it?
+it means that it should generate an output with all the steps until the end of the program.
+(GDB LIKE).
+
+
+function f_name(params) {
+	init params;
+	execute loops, execute conditionals;
+}
+
+something like
+
+
+
+condition = a operation b operation c operation .... nr1 operation nr2 operation nr3
+condition = nr1 operation nr2 operation nr3 ... opeartion a operation b
+
+nr1, nr2, nr3 Belongs to (N).
+
+a, b, c Belongs to (variables).
+
+function sort_function(vector array, variable n) {
+	variable a, b, c;
+	variable z = 5;
+	while(bool_condition) ) {
+		if(bool_condition) {
+			for(index, 1, 10, 1) {
+				execute_function
+			}
+		}
+	}
+}
+
+
+bool_condition have two operations
+
+
+
+bool_condition = condition1 bool_operation1 condition1 or/and condition2 bool_operation2 condition2 .....
+
+bool_condition = condition1 ? => condition1 != 0
+
+bool_operation = " >, <, ==, >=, <= "
+
+
+input:
+function test(vector array, variable n) {
+	variable a = 5
+	variable b = 3
+	variable c = 1,z = 4
+	variable p = a + b * 5 + 3
+}
+
+output:
+it 1:
+line 1:
+a = 5
+it 2:
+line 2:
+b = 3
+it 3:
+line 3:
+c = 1
+z = 4
+it 4:
+line 4:
+p = 5 + 3 * 5 + 3
+finish:
+
+function test() {
+	variable a = 5
+	variable b = 3
+	variable c = 1,z = 4
+	variable p = a + b * 5 + 3
+}
+
+
+variable azb = 25
+variable b = 75 +azb * azb;
+variable cx = 100;
+variable z = b * b + cx / cx + 15 * 2;
+
+
+"swap"
+variable cx = 5 * 5 + 3
+variable baca = 5 + 3
+variable bb
+baca = cx * baca
+variable a = baca + 1
+variable aa = 10
+variable bbz = 15
+variable swap
+swap = aa
+aa = bbz
+bbz = swap
+
+
+
+
+Example::..............................
+
+variable cx = 5 * 5 + 3
+variable baca = 5 + cx * 5
+variable bb
+baca = cx * baca
+variable a = baca + 1
+variable aa = 10
+variable bbz = 15
+variable swap
+variable ar = 2
+
+variable cz = ar * ar * ar * ar * ar * ar * ar * ar * ar * ar
+
+
+aa = aa + bbz
+bbz = aa - bbz
+aa = aa - bbz
+variable cxr = 1 * 2 * 3 * 4 * 5 * 6 * 7
+
+Result::................................
+Init var: cx -> 28
+Init var: baca -> 145
+Init var: bb -> 0
+Expression: baca -> 4060
+Init var: a -> 4061
+Init var: aa -> 10
+Init var: bbz -> 15
+Init var: swap -> 0
+Init var: ar -> 2
+Init var: cz -> 1024
+Expression: aa -> 25
+Expression: bbz -> 10
+Expression: aa -> 15
+Init var: cxr -> 5040
+
+
+
+
+
+

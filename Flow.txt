@@ -1,0 +1,5 @@
+var -> variable (suport int)
+if -> conditition (supports '==' '<=' '>=' '<' '>' between expressions)
+while -> conditition (supports '==' '<=' '>=' '<' '>' between expressions)
+
+var variable=expression
